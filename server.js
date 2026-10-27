@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
       uptimeSeconds: Math.round((Date.now() - startedAt) / 1000),
       environment: process.env.NODE_ENV || "development",
       instance: process.env.RENDER_INSTANCE_ID || "local",
-      commit: process.env.RENDER_GIT_COMMIT || "local",
+      commit: process.env.RENDER_GIT_COMMIT || "meow",
     });
   }
 
