@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Render Docker App</title>
+  <meta name="description" content="A simple Dockerized Node.js app deployed to Render from GitHub." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <main class="card">
+    <span class="badge"><span class="dot"></span> Live</span>
+    <h1>Docker <span class="accent">×</span> Render</h1>
+    <p class="subtitle">Built from GitHub, shipped in a container.</p>
+
+    <section class="stats" aria-label="Server info">
+      <div class="stat"><span class="label">Node</span><span id="node" class="value">…</span></div>
+      <div class="stat"><span class="label">Uptime</span><span id="uptime" class="value">…</span></div>
+      <div class="stat"><span class="label">Env</span><span id="env" class="value">…</span></div>
+      <div class="stat"><span class="label">Commit</span><span id="commit" class="value">…</span></div>
+    </section>
+
+    <button id="refresh-btn" class="btn">Refresh</button>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

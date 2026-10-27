@@ -1,0 +1,14 @@
+{
+  "name": "render-proj",
+  "version": "1.0.0",
+  "description": "A simple Dockerized Node.js app deployed to Render",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
