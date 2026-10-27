@@ -96,6 +96,15 @@ h1 {
 }
 .subtitle { color: var(--muted); margin-top: 0.5rem; }
 
+.message {
+  margin-top: 1.5rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 14px;
+  font-weight: 600;
+  background: linear-gradient(135deg, hsla(265 90% 68% / 0.15), hsla(190 90% 55% / 0.15));
+  border: 1px solid hsla(265 90% 68% / 0.35);
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

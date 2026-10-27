@@ -2,6 +2,7 @@ async function loadInfo() {
   try {
     const res = await fetch("/api/info");
     const data = await res.json();
+    document.getElementById("message").textContent = data.message;
     document.getElementById("node").textContent = data.node;
     document.getElementById("uptime").textContent = `${data.uptimeSeconds}s`;
     document.getElementById("env").textContent = data.environment;

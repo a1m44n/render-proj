@@ -36,12 +36,12 @@ const server = http.createServer((req, res) => {
   // Simple JSON API endpoint
   if (url.pathname === "/api/info") {
     return sendJSON(res, 200, {
-      message: "Hello from Docker on Render!",
+      message: "👋 Hello from Docker on Render! Chimichunga baby",
       node: process.version,
       uptimeSeconds: Math.round((Date.now() - startedAt) / 1000),
       environment: process.env.NODE_ENV || "development",
       instance: process.env.RENDER_INSTANCE_ID || "local",
-      commit: process.env.RENDER_GIT_COMMIT || "meow",
+      commit: process.env.RENDER_GIT_COMMIT || "commit",
     });
   }
 
